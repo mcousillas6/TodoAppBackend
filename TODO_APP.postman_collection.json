@@ -1,0 +1,157 @@
+{
+	"info": {
+		"_postman_id": "abb31a1b-8d42-4471-8100-8e6014576dd5",
+		"name": "TODO_APP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "sign_up",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"user\":{\n\t\t\"email\": \"a@a.com\",\n\t\t\"password\": \"asdasdasd\",\n\t\t\"password_confirmation\": \"asdasdasd\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "localhost:4000/api/v1/sign_up",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"sign_up"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "my_user",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer: eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJ0b2RvX2FwcCIsImV4cCI6MTUzNzEyMTc5MCwiaWF0IjoxNTM0NzAyNTkwLCJpc3MiOiJ0b2RvX2FwcCIsImp0aSI6IjZhNWJkOWJiLTA4YjYtNGMyMy1hNjcyLTdiNTE4ZDQ5ZDA4MiIsIm5iZiI6MTUzNDcwMjU4OSwic3ViIjoiMyIsInR5cCI6ImFjY2VzcyJ9.tsNqDvYtXfu9fO9d0cswATLLc_Tz0M-3ZeUnR19HFG-uTVw_jE5ClhzehPajdhCONTnAeDEIpgvnpc4dg-g8lA"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "localhost:4000/api/v1/my_user",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"my_user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list_todos",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer: eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJ0b2RvX2FwcCIsImV4cCI6MTUzNzEyMTc5MCwiaWF0IjoxNTM0NzAyNTkwLCJpc3MiOiJ0b2RvX2FwcCIsImp0aSI6IjZhNWJkOWJiLTA4YjYtNGMyMy1hNjcyLTdiNTE4ZDQ5ZDA4MiIsIm5iZiI6MTUzNDcwMjU4OSwic3ViIjoiMyIsInR5cCI6ImFjY2VzcyJ9.tsNqDvYtXfu9fO9d0cswATLLc_Tz0M-3ZeUnR19HFG-uTVw_jE5ClhzehPajdhCONTnAeDEIpgvnpc4dg-g8lA"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "localhost:4000/api/v1/todos",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit_todo",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer: eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJ0b2RvX2FwcCIsImV4cCI6MTUzNzEyMTc5MCwiaWF0IjoxNTM0NzAyNTkwLCJpc3MiOiJ0b2RvX2FwcCIsImp0aSI6IjZhNWJkOWJiLTA4YjYtNGMyMy1hNjcyLTdiNTE4ZDQ5ZDA4MiIsIm5iZiI6MTUzNDcwMjU4OSwic3ViIjoiMyIsInR5cCI6ImFjY2VzcyJ9.tsNqDvYtXfu9fO9d0cswATLLc_Tz0M-3ZeUnR19HFG-uTVw_jE5ClhzehPajdhCONTnAeDEIpgvnpc4dg-g8lA"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"todo\": {\n\t\t\"done\": true\n\t}\n}"
+				},
+				"url": {
+					"raw": "localhost:4000/api/v1/todos/3",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"todos",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create_todo",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer: eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJ0b2RvX2FwcCIsImV4cCI6MTUzNzEyMTc5MCwiaWF0IjoxNTM0NzAyNTkwLCJpc3MiOiJ0b2RvX2FwcCIsImp0aSI6IjZhNWJkOWJiLTA4YjYtNGMyMy1hNjcyLTdiNTE4ZDQ5ZDA4MiIsIm5iZiI6MTUzNDcwMjU4OSwic3ViIjoiMyIsInR5cCI6ImFjY2VzcyJ9.tsNqDvYtXfu9fO9d0cswATLLc_Tz0M-3ZeUnR19HFG-uTVw_jE5ClhzehPajdhCONTnAeDEIpgvnpc4dg-g8lA"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"todo\": {\n\t\t\"title\": \"Test Todo\",\n\t\t\"done\": false,\n\t\t\"description\": \"blabsbsb\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "localhost:4000/api/v1/todos",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"todos"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
